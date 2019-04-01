@@ -1,3 +1,38 @@
 page-home {
+  .ion-menu{
+    width: 50%;
+  }
+  .content{
+    ion-card {
+  position: relative;
+  text-align: center;
+}
 
+.card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  color: #fff;
+}
+  }
+  .menuNav{
+    // padding: 2.8px;
+    // background-color: rgb(219, 213, 37);
+    // box-shadow: 1px rgb(67, 223, 203);
+  }
+  .menu{
+    button{
+      border: 1px solid $green;
+    }
+  }
 }

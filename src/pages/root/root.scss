@@ -1,0 +1,19 @@
+page-root {
+  .acc{
+    height: 255px;
+    width: 100%;
+  }
+  .form-card{
+    background-color: transparent;
+    ion-item{
+      background-color: transparent;
+    }
+  }
+  .rootimage{
+    background-image: url('../../assets/imgs/naru2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+}
