@@ -6,6 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { FormsModule }   from '@angular/forms';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule,MatInputModule } from '@angular/material';
+
 import { BackgroundMode } from '@ionic-native/background-mode/ngx';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -33,6 +36,9 @@ import { Auth } from '../providers/auth/auth';
     IonicModule.forRoot(MyApp),
     HttpClientModule,
     FormsModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    MatInputModule,
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],

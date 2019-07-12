@@ -19,14 +19,12 @@ export class MyApp {
     auth:''
   }
   rootPage:any;
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,public storage:Storage,private auth: Auth,private backgtoundmode:BackgroundMode) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,public storage:Storage,private auth: Auth,private backgroundMode:BackgroundMode) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      this.backgtoundmode.enable
-      console.log(this.backgtoundmode.isEnabled)
       this.storage.get('user').then((user) => {
         console.log(user)
         this.rootPage = user

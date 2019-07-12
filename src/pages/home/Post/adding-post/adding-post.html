@@ -9,15 +9,22 @@
 
 <ion-content padding>
 
-  <ion-list>
-
-    <ion-item>
+  <h1>  Creer votre Poste</h1>
+  <form class="list-form" >
+    <div class="form-list">
       <ion-input type="text" placeholder="Username"></ion-input>
-    </ion-item>
-
-    <ion-item>
       <ion-input type="password" placeholder="Password"></ion-input>
-    </ion-item>
+      <ion-item>
+        <mat-form-field class="example-full-width">
+          <textarea matInput ></textarea>
+        </mat-form-field>
+      </ion-item>
+      <div padding>
+        <button mat-raised-button class="primary">Click me!</button>
+      </div>
+    </div>
+  </form>
 
-  </ion-list>
+  <button mat-button color="primary">text</button>
+
 </ion-content>

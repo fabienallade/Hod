@@ -20,7 +20,6 @@ export class RootPage {
   submit(){
     // console.log(this.firstName)
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad RootPage');
   }

@@ -11,31 +11,27 @@ import { Auth } from '../../providers/auth/auth';
   templateUrl: 'home.html'
 })
 export class HomePage {
-user={
-  username:"allade fabien"
-}
-  constructor(public navCtrl: NavController,public menuCtrl: MenuController,public auth:Auth,public storage:Storage,public popoverCtrl:PopoverController) {
-    // this.backgroundMode.on('activate').subscribe(() => {
-    //   console.log('activated');
-    // });
-    //
-    // this.backgroundMode.enable();
+
+  user={
+    username:"allade fabien"
+  }
+  constructor(public navCtrl: NavController,public menuCtrl: MenuController,public auth:Auth,public storage:Storage,public popoverCtrl:PopoverController,private backgroundMode: BackgroundMode) {
     this.storage.get('user').then((user) => {
       this.user=user
     });
   }
   openMenu() {
-  this.menuCtrl.open();
-}
-presentPopover(event){
-  let popover = this.popoverCtrl.create(HomePopoverPage);
+    this.menuCtrl.open();
+  }
+  presentPopover(event){
+    let popover = this.popoverCtrl.create(HomePopoverPage);
     popover.present({
       ev: event
     });
-}
-addpostpage(){
-  this.navCtrl.push(AddingPostPage)
-  console.log("fabien")
-}
+  }
+  addpostpage(){
+    this.navCtrl.push(AddingPostPage)
+    console.log("fabien")
+  }
 
 }

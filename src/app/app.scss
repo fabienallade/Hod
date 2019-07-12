@@ -14,3 +14,193 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.input-group-append {
+  margin-left: -1px;
+}
+.input-group.input-group-merge>.input-group-append>.input-group-text {
+  padding-left: .375rem;
+  border-top-right-radius: .375rem;
+  border-bottom-right-radius: .375rem;
+  border-left-width: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: .5rem .75rem;
+  margin-bottom: 0;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #95aac9;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #d2ddec;
+  border-radius: .375rem;
+}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-group.input-group-merge>.form-control-appended {
+  padding-right: .375rem;
+  border-top-right-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+  border-right-width: 0;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1rem + 2px);
+  padding: .5rem .75rem;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #12263f;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1px solid #d2ddec;
+  border-radius: .375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+  color: #12263f !important;
+  background-color: #fff !important;
+  border-color: #2c7be5 !important;
+  outline: 0;
+  box-shadow: none;
+}
+body {
+  margin: 0;
+  font-family: Cerebri Sans,sans-serif;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #12263f;
+  text-align: left;
+  background-color: #f9fbfd !important;
+}
+.form-text {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+.text-muted {
+  color: #95aac9!important;
+}
+.form-text {
+  display: block;
+  margin-top: .25rem;
+}
+.small, small {
+  font-size: .8125rem;
+  font-weight: 400;
+}
+a, a:hover {
+  text-decoration: none;
+}
+a {
+  color: #2c7be5;
+  background-color: transparent;
+}
+.header-body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e3ebf6;
+}
+.header {
+  margin-bottom: 2rem;
+}
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.ql-toolbar {
+  position: relative;
+  padding: .5rem .75rem;
+  background-color: #fff;
+  border: 1px solid #d2ddec;
+  border-radius: .375rem .375rem 0 0;
+  color: #12263f;
+}
+.card {
+    margin-bottom: 1.5rem;
+    border-color: #edf2f9;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #edf2f9;
+    border-radius: .5rem;
+}
+.border {
+    border: 1px solid #e3ebf6!important;
+}
+
+.bg-light {
+    background-color: #edf2f9!important;
+}
+.dz-message {
+    padding: 5rem 1rem;
+    background-color: #fff;
+    border: 1px dashed #d2ddec;
+    border-radius: .375rem;
+    text-align: center;
+    color: #95aac9;
+    transition: all .2s ease-in-out;
+    order: -1;
+    cursor: pointer;
+    z-index: 999;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1a68d1;
+    border-color: #1862c6;
+}
+.custom-switch {
+    min-height: 1.5rem;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.card-header:first-child {
+    border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    min-height: 3.75rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.card-header {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #edf2f9;
+}
